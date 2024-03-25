@@ -1,9 +1,11 @@
-using InventarioASP.Models;
+using InventarioASP.Modelos.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace InventarioASP.Controllers
-{
+namespace InventarioASP.Areas.Inventario.Controllers
+
+{   //indicamos a que area pertenece el controlador
+    [Area ("Inventario")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
